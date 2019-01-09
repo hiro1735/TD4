@@ -1,0 +1,37 @@
+#100MHz RC発振回路
+NET "CLK"  	LOC = B8   ;
+
+#Pushスイッチ
+NET "RST"  	LOC = G12  ;
+
+#7セグメントLED-カソード
+#7  6  5  4  3  2  1  0
+#Dp g  f  e  d  c  b  a
+#NET "SEG[0]"  	LOC = L14  ;
+#NET "SEG[1]"  	LOC = H12  ;
+#NET "SEG[2]"  	LOC = N14  ;
+#NET "SEG[3]"  	LOC = N11  ;
+#NET "SEG[4]"  	LOC = P12  ;
+#NET "SEG[5]"  	LOC = L13  ;
+#NET "SEG[6]"  	LOC = M12  ;
+#NET "SEG[7]"  	LOC = N13  ;
+
+#7セグメントLED-各桁コモンアノード
+#NET "TR[0]"  	LOC = F12  ;	#最下位桁
+#NET "TR[1]"  	LOC = J12  ;
+#NET "TR[2]"  	LOC = M13  ;
+#NET "TR[3]"  	LOC = K14  ;	#最上位桁
+
+#LED
+NET "OUT_LD[0]"  	LOC = M5   ;
+NET "OUT_LD[1]"  	LOC = M11  ;
+NET "OUT_LD[2]"  	LOC = P7   ;
+NET "OUT_LD[3]"  	LOC = P6   ;
+
+#クロックスイッチ
+NET "CLK_SW"  		LOC = G12   ;
+#スライドスイッチ
+NET "SL_SW[0]"  		LOC = P11   ;
+NET "SL_SW[1]"  		LOC = L3   ;
+NET "SL_SW[2]"  		LOC = K3   ;
+NET "SL_SW[3]"  		LOC = B4   ;
