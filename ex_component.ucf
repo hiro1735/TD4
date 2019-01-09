@@ -23,13 +23,13 @@ NET "RST"  	LOC = G12  ;
 #NET "TR[3]"  	LOC = K14  ;	#最上位桁
 
 #LED
-NET "OUT_LD[0]"  	LOC = M5   ;
-NET "OUT_LD[1]"  	LOC = M11  ;
-NET "OUT_LD[2]"  	LOC = P7   ;
-NET "OUT_LD[3]"  	LOC = P6   ;
+NET "LED[0]"  	LOC = M5   ;
+NET "LED[1]"  	LOC = M11  ;
+NET "LED[2]"  	LOC = P7   ;
+NET "LED[3]"  	LOC = P6   ;
 
 #クロックスイッチ
-NET "CLK_SW"  		LOC = G12   ;
+NET "CLK_SW"  		LOC = M4   ;
 #スライドスイッチ
 NET "SL_SW[0]"  		LOC = P11   ;
 NET "SL_SW[1]"  		LOC = L3   ;
