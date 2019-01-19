@@ -11,8 +11,7 @@ entity decorder is
     Port ( OP_CODE : in  STD_LOGIC_VECTOR(3 downto 0);
            C_FLAG : in  STD_LOGIC;
            LOAD : out  STD_LOGIC_VECTOR(3 downto 0);
-           SEL_A : out  STD_LOGIC;
-			  SEL_B : out  STD_LOGIC);
+           SEL_AB : out  STD_LOGIC_VECTOR(1 downto 0));
 end decorder;
 
 architecture RTL of decorder is
@@ -21,8 +20,7 @@ architecture RTL of decorder is
 
 begin
 
-	SEL_A <= selecter(0);
-	SEL_B <= selecter(1);
+	SEL_AB <= selecter;
 
 	--OP_CODE(OP3,OP2,OP1,OP0) 
 	--selecter(B,A) LOAD(LOAD3,LOAD2,LODAD1,LOAD0) 

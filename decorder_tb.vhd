@@ -13,8 +13,7 @@ ARCHITECTURE behavior OF decorder_tb IS
     Port ( OP_CODE : in  STD_LOGIC_VECTOR(3 downto 0);
            C_FLAG : in  STD_LOGIC;
            LOAD : out  STD_LOGIC_VECTOR(3 downto 0);
-           SEL_A : out  STD_LOGIC;
-			  SEL_B : out  STD_LOGIC);
+           SEL_AB : out  STD_LOGIC_VECTOR(1 downto 0));
     END COMPONENT;
     
 
@@ -24,8 +23,7 @@ ARCHITECTURE behavior OF decorder_tb IS
 
  	--Outputs
    signal LOAD : std_logic_vector(3 downto 0);
-   signal SEL_A : std_logic;
-	signal SEL_B : std_logic;
+   signal SEL_AB : std_logic_vector(1 downto 0);
  
 BEGIN
  
@@ -34,8 +32,7 @@ BEGIN
           OP_CODE => OP_CODE,
           C_FLAG => C_FLAG,
           LOAD => LOAD,
-          SEL_A => SEL_A,
-			 SEL_B => SEL_B
+          SEL_AB => SEL_AB
         );
 
    stim_proc: process

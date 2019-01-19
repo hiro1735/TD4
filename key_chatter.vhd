@@ -11,7 +11,7 @@ end key_chatter;
 
 architecture RTL of key_chatter is
 	signal cnt : integer range 0 to 10000;
-	constant ct : integer := 9999;
+	constant ct : integer := 2;
 begin
 
 	process(CLK , RST)
